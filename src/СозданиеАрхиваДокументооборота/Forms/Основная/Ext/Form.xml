@@ -1,0 +1,1101 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Управление архивацией документооборота</v8:content>
+		</v8:item>
+	</Title>
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<AutoTitle>false</AutoTitle>
+	<CommandBarLocation>None</CommandBarLocation>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<HorizontalAlign>Right</HorizontalAlign>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnLoadDataFromSettingsAtServer">ПриЗагрузкеДанныхИзНастроекНаСервере</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="ГруппаРежим" id="104">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа режим</v8:content>
+				</v8:item>
+			</Title>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="ГруппаРежимРасширеннаяПодсказка" id="105"/>
+			<Events>
+				<Event name="OnCurrentPageChange">ГруппаРежимПриСменеСтраницы</Event>
+			</Events>
+			<ChildItems>
+				<Page name="ГруппаАрхивация" id="106">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Архивация</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа архивация</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаАрхивацияРасширеннаяПодсказка" id="107"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаВертикальная" id="3">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа вертикальная</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа вертикальная</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ToolTipRepresentation>ShowTop</ToolTipRepresentation>
+							<Width>65</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаВертикальнаяРасширеннаяПодсказка" id="4">
+								<AutoMaxWidth>false</AutoMaxWidth>
+								<MaxWidth>66</MaxWidth>
+								<HorizontalStretch>true</HorizontalStretch>
+								<Title formatted="false">
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Данная функция позволяет переместить файлы 1С-Отчетности за определенный период из информационной базы в указанный каталог для того чтобы уменьшить размер информационной базы</v8:content>
+									</v8:item>
+								</Title>
+							</ExtendedTooltip>
+							<ChildItems>
+								<UsualGroup name="ГруппаИнформацияБэкап" id="69">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа информация бэкап</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа информация бэкап</v8:content>
+										</v8:item>
+									</ToolTip>
+									<HorizontalStretch>true</HorizontalStretch>
+									<Group>Horizontal</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<BackColor>web:MistyRose</BackColor>
+									<ExtendedTooltip name="ГруппаИнформацияБэкапРасширеннаяПодсказка" id="70"/>
+									<ChildItems>
+										<LabelDecoration name="ДекорацияБэкапАрхивация" id="71">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<HorizontalStretch>true</HorizontalStretch>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Перед выполнением архивирования настоятельно рекомендуется выполнить резервное копирование данных информационной базы</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ДекорацияБэкапАрхивацияКонтекстноеМеню" id="72"/>
+											<ExtendedTooltip name="ДекорацияБэкапАрхивацияРасширеннаяПодсказка" id="73"/>
+										</LabelDecoration>
+										<Button name="СделатьБэкап" id="74">
+											<Type>UsualButton</Type>
+											<Visible>false</Visible>
+											<GroupVerticalAlign>Center</GroupVerticalAlign>
+											<CommandName>Form.Command.СделатьБэкап</CommandName>
+											<ToolTipRepresentation>Button</ToolTipRepresentation>
+											<ExtendedTooltip name="СделатьБэкапРасширеннаяПодсказка" id="75">
+												<Title formatted="false">
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Выполните резервное копирование, если боитесь потерять важные данные, потому что
+после завершения архивации объектов они будут безвозвратно удалены из информационной базы.
+Самостоятельный запуск резервного копирования доступен только в файловой ИБ, в остальных случаях
+он выполняется администратором.</v8:content>
+													</v8:item>
+												</Title>
+											</ExtendedTooltip>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаПараметрКаталог" id="29">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа параметр каталог</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Horizontal</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаПараметрКаталогРасширеннаяПодсказка" id="30"/>
+									<ChildItems>
+										<InputField name="КаталогАрхива" id="31">
+											<DataPath>КаталогАрхива</DataPath>
+											<TitleLocation>Top</TitleLocation>
+											<ToolTipRepresentation>ShowTop</ToolTipRepresentation>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<MaxWidth>70</MaxWidth>
+											<ChoiceButton>true</ChoiceButton>
+											<ChoiceButtonRepresentation>ShowInInputField</ChoiceButtonRepresentation>
+											<TextEdit>false</TextEdit>
+											<ContextMenu name="КаталогАрхиваКонтекстноеМеню" id="32"/>
+											<ExtendedTooltip name="КаталогАрхиваРасширеннаяПодсказка" id="33"/>
+											<Events>
+												<Event name="StartChoice">КаталогАрхиваНачалоВыбора</Event>
+											</Events>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаКнопкиПодвала" id="84">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа кнопки подвала</v8:content>
+										</v8:item>
+									</Title>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаКнопкиПодвалаРасширеннаяПодсказка" id="85"/>
+									<ChildItems>
+										<Button name="АрхивироватьВсе" id="1">
+											<Type>UsualButton</Type>
+											<DefaultButton>true</DefaultButton>
+											<MaxWidth>3</MaxWidth>
+											<CommandName>Form.Command.АрхивироватьВсе</CommandName>
+											<ToolTipRepresentation>ShowRight</ToolTipRepresentation>
+											<ExtendedTooltip name="АрхивироватьВсеРасширеннаяПодсказка" id="2"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаФильтрЕщеНастройки" id="218">
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаФильтрЕщеНастройкиРасширеннаяПодсказка" id="219"/>
+									<ChildItems>
+										<CheckBoxField name="ТолькоВыгрузка" id="215">
+											<DataPath>ТолькоВыгрузка</DataPath>
+											<TitleLocation>Right</TitleLocation>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Позволяет выгрузить содержимое объектов, ничего не удаляя  из информационной базы</v8:content>
+												</v8:item>
+											</ToolTip>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ТолькоВыгрузкаКонтекстноеМеню" id="216"/>
+											<ExtendedTooltip name="ТолькоВыгрузкаРасширеннаяПодсказка" id="217"/>
+										</CheckBoxField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаФильтрОрганизаций" id="47">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Выбрать организации</v8:content>
+										</v8:item>
+									</Title>
+									<TitleFont ref="style:NormalTextFont" kind="StyleItem"/>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Настройка отбора объектов по организациям</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Width>65</Width>
+									<HorizontalStretch>true</HorizontalStretch>
+									<Group>Vertical</Group>
+									<Behavior>Collapsible</Behavior>
+									<Collapsed>true</Collapsed>
+									<ControlRepresentation>Picture</ControlRepresentation>
+									<ShowLeftMargin>false</ShowLeftMargin>
+									<ExtendedTooltip name="ГруппаФильтрОрганизацийРасширеннаяПодсказка" id="48"/>
+									<ChildItems>
+										<CheckBoxField name="ОграничитьОрганизации" id="49">
+											<DataPath>ОграничитьОрганизации</DataPath>
+											<TitleLocation>Right</TitleLocation>
+											<CheckBoxType>CheckBox</CheckBoxType>
+											<ContextMenu name="ОграничитьОрганизацииКонтекстноеМеню" id="50"/>
+											<ExtendedTooltip name="ОграничитьОрганизацииРасширеннаяПодсказка" id="51"/>
+											<Events>
+												<Event name="OnChange">ОграничитьОрганизацииПриИзменении</Event>
+											</Events>
+										</CheckBoxField>
+										<InputField name="ПредставлениеФильтраОрг" id="52">
+											<DataPath>ПредставлениеФильтраОрг</DataPath>
+											<Visible>false</Visible>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>организаций</v8:content>
+												</v8:item>
+											</Title>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<MaxWidth>58</MaxWidth>
+											<ChoiceButton>true</ChoiceButton>
+											<ChooseType>false</ChooseType>
+											<TextEdit>false</TextEdit>
+											<ContextMenu name="ПредставлениеФильтраОргКонтекстноеМеню" id="53"/>
+											<ExtendedTooltip name="ПредставлениеФильтраОргРасширеннаяПодсказка" id="54"/>
+											<Events>
+												<Event name="StartChoice">ПредставлениеФильтраОргНачалоВыбора</Event>
+											</Events>
+										</InputField>
+										<UsualGroup name="ГруппаВерстка0" id="91">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа верстка0</v8:content>
+												</v8:item>
+											</Title>
+											<Group>Horizontal</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаВерстка0РасширеннаяПодсказка" id="92"/>
+											<ChildItems>
+												<PictureDecoration name="ДекорацияВерсткаОтступ0" id="93">
+													<Width>1</Width>
+													<Height>1</Height>
+													<FileDragMode>AsFile</FileDragMode>
+													<ContextMenu name="ДекорацияВерсткаОтступ0КонтекстноеМеню" id="94"/>
+													<ExtendedTooltip name="ДекорацияВерсткаОтступ0РасширеннаяПодсказка" id="95"/>
+												</PictureDecoration>
+												<UsualGroup name="ГруппаДинамическиеЭлементыОрганизации" id="89">
+													<EnableContentChange>true</EnableContentChange>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа динамические элементы организации</v8:content>
+														</v8:item>
+													</Title>
+													<Group>Vertical</Group>
+													<Behavior>Usual</Behavior>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаДинамическиеЭлементыОрганизацииРасширеннаяПодсказка" id="90"/>
+												</UsualGroup>
+												<UsualGroup name="ГруппаДинамическиеЭлементыОрганизации1" id="99">
+													<EnableContentChange>true</EnableContentChange>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа динамические элементы организации</v8:content>
+														</v8:item>
+													</Title>
+													<Group>Vertical</Group>
+													<Behavior>Usual</Behavior>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаДинамическиеЭлементыОрганизации1РасширеннаяПодсказка" id="100"/>
+												</UsualGroup>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаФильтрПериод" id="5">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Указать период обработки</v8:content>
+										</v8:item>
+									</Title>
+									<TitleFont ref="style:NormalTextFont" kind="StyleItem"/>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Настройка отбора объектов по дате отправки</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Width>65</Width>
+									<HorizontalStretch>true</HorizontalStretch>
+									<Group>Horizontal</Group>
+									<HorizontalSpacing>Half</HorizontalSpacing>
+									<Behavior>Collapsible</Behavior>
+									<Collapsed>true</Collapsed>
+									<ControlRepresentation>Picture</ControlRepresentation>
+									<ShowLeftMargin>false</ShowLeftMargin>
+									<ExtendedTooltip name="ГруппаФильтрПериодРасширеннаяПодсказка" id="6"/>
+									<ChildItems>
+										<CheckBoxField name="ОграничитьПериод" id="26">
+											<DataPath>ОграничитьПериод</DataPath>
+											<TitleLocation>Right</TitleLocation>
+											<CheckBoxType>CheckBox</CheckBoxType>
+											<ContextMenu name="ОграничитьПериодКонтекстноеМеню" id="27"/>
+											<ExtendedTooltip name="ОграничитьПериодРасширеннаяПодсказка" id="28"/>
+											<Events>
+												<Event name="OnChange">ОграничитьПериодПриИзменении</Event>
+											</Events>
+										</CheckBoxField>
+										<InputField name="НачалоПериода" id="86">
+											<DataPath>НачалоПериода</DataPath>
+											<ContextMenu name="НачалоПериодаКонтекстноеМеню" id="87"/>
+											<ExtendedTooltip name="НачалоПериодаРасширеннаяПодсказка" id="88"/>
+											<Events>
+												<Event name="OnChange">НачалоПериодаПриИзменении</Event>
+											</Events>
+										</InputField>
+										<InputField name="ОкончаниеПериода" id="20">
+											<DataPath>ОкончаниеПериода</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>по</v8:content>
+												</v8:item>
+											</Title>
+											<HorizontalStretch>false</HorizontalStretch>
+											<EditFormat>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>ДФ=dd.MM.yyyy</v8:content>
+												</v8:item>
+											</EditFormat>
+											<ContextMenu name="ОкончаниеПериодаКонтекстноеМеню" id="21"/>
+											<ExtendedTooltip name="ОкончаниеПериодаРасширеннаяПодсказка" id="22"/>
+											<Events>
+												<Event name="OnChange">ОкончаниеПериодаПриИзменении</Event>
+											</Events>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаКУдалению0" id="64">
+									<Visible>false</Visible>
+									<Group>Horizontal</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаКУдалению0РасширеннаяПодсказка" id="65"/>
+									<ChildItems>
+										<CheckBoxField name="ОграничитьПроизводительность" id="66">
+											<DataPath>ОграничитьПроизводительность</DataPath>
+											<TitleLocation>Right</TitleLocation>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ОграничитьПроизводительностьКонтекстноеМеню" id="67"/>
+											<ExtendedTooltip name="ОграничитьПроизводительностьРасширеннаяПодсказка" id="68"/>
+										</CheckBoxField>
+									</ChildItems>
+								</UsualGroup>
+								<Button name="АнализироватьСодержимое" id="15">
+									<Type>UsualButton</Type>
+									<Visible>false</Visible>
+									<CommandName>Form.Command.АнализироватьСодержимое</CommandName>
+									<ExtendedTooltip name="АнализироватьСодержимоеРасширеннаяПодсказка" id="16"/>
+								</Button>
+								<UsualGroup name="ГруппаФильтрОбъектовИОрганов" id="34">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Выбрать группы объектов</v8:content>
+										</v8:item>
+									</Title>
+									<TitleFont ref="style:NormalTextFont" kind="StyleItem"/>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Настройка отбора объектов по категориям и контролирующим органам</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Width>65</Width>
+									<Group>Vertical</Group>
+									<Behavior>Collapsible</Behavior>
+									<Collapsed>true</Collapsed>
+									<ControlRepresentation>Picture</ControlRepresentation>
+									<ShowLeftMargin>false</ShowLeftMargin>
+									<ExtendedTooltip name="ГруппаФильтрОбъектовИОргановРасширеннаяПодсказка" id="35"/>
+									<ChildItems>
+										<LabelDecoration name="Декорация2" id="78">
+											<Visible>false</Visible>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Укажите группы объектов для обработки:</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="Декорация2КонтекстноеМеню" id="79"/>
+											<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="80"/>
+										</LabelDecoration>
+										<UsualGroup name="ГруппаГоризонтальная5" id="76">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа горизонтальная5</v8:content>
+												</v8:item>
+											</Title>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаГоризонтальная5РасширеннаяПодсказка" id="77"/>
+											<ChildItems>
+												<UsualGroup name="ГруппаВидыОбъектов" id="38">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Виды объектов:</v8:content>
+														</v8:item>
+													</Title>
+													<TitleTextColor>style:FormTextColor</TitleTextColor>
+													<Group>Vertical</Group>
+													<Behavior>Usual</Behavior>
+													<Representation>None</Representation>
+													<ExtendedTooltip name="ГруппаВидыОбъектовРасширеннаяПодсказка" id="39"/>
+												</UsualGroup>
+												<PictureDecoration name="Декорация3" id="101">
+													<Width>2</Width>
+													<Height>2</Height>
+													<FileDragMode>AsFile</FileDragMode>
+													<ContextMenu name="Декорация3КонтекстноеМеню" id="102"/>
+													<ExtendedTooltip name="Декорация3РасширеннаяПодсказка" id="103"/>
+												</PictureDecoration>
+												<UsualGroup name="ГруппаКонтролирующиеОрганы" id="36">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Контролирующие органы:</v8:content>
+														</v8:item>
+													</Title>
+													<TitleTextColor>style:FormTextColor</TitleTextColor>
+													<Group>Vertical</Group>
+													<Behavior>Usual</Behavior>
+													<Representation>None</Representation>
+													<ExtendedTooltip name="ГруппаКонтролирующиеОрганыРасширеннаяПодсказка" id="37"/>
+												</UsualGroup>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаВосстановление" id="108">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Восстановление</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа восстановление</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаВосстановлениеРасширеннаяПодсказка" id="109"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаВертикальнаяВосстановления" id="110">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа вертикальная</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа вертикальная</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ToolTipRepresentation>ShowTop</ToolTipRepresentation>
+							<Width>65</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаВертикальнаяВосстановленияРасширеннаяПодсказка" id="111">
+								<AutoMaxWidth>false</AutoMaxWidth>
+								<MaxWidth>66</MaxWidth>
+								<HorizontalStretch>true</HorizontalStretch>
+								<Title formatted="false">
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Данная функция позволяет восстановить файлы 1С-Отчетности за определенный период из указанного каталога в информационную базу</v8:content>
+									</v8:item>
+								</Title>
+							</ExtendedTooltip>
+							<ChildItems>
+								<UsualGroup name="ГруппаИнформацияБэкап1" id="112">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа информация бэкап</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа информация бэкап</v8:content>
+										</v8:item>
+									</ToolTip>
+									<HorizontalStretch>true</HorizontalStretch>
+									<Group>Horizontal</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<BackColor>web:MistyRose</BackColor>
+									<ExtendedTooltip name="ГруппаИнформацияБэкап1РасширеннаяПодсказка" id="113"/>
+									<ChildItems>
+										<LabelDecoration name="ДекорацияБэкапВосстановление" id="114">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<HorizontalStretch>true</HorizontalStretch>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Перед выполнением восстановления объектов настоятельно рекомендуется выполнить резервное копирование данных информационной базы</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ДекорацияБэкапВосстановлениеКонтекстноеМеню" id="115"/>
+											<ExtendedTooltip name="ДекорацияБэкапВосстановлениеРасширеннаяПодсказка" id="116"/>
+										</LabelDecoration>
+										<Button name="СделатьБэкапВосстановление" id="117">
+											<Type>UsualButton</Type>
+											<Visible>false</Visible>
+											<GroupVerticalAlign>Center</GroupVerticalAlign>
+											<CommandName>Form.Command.СделатьБэкап</CommandName>
+											<ToolTipRepresentation>Button</ToolTipRepresentation>
+											<ExtendedTooltip name="СделатьБэкапВосстановлениеРасширеннаяПодсказка" id="118">
+												<Title formatted="false">
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Выполните резервное копирование, если боитесь повредить важные данные.
+Самостоятельный запуск резервного копирования доступен только в файловой ИБ, в остальных случаях
+он выполняется администратором.</v8:content>
+													</v8:item>
+												</Title>
+											</ExtendedTooltip>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаПараметрКаталогВосстановления" id="119">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа параметр каталог</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа параметр каталог</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаПараметрКаталогВосстановленияРасширеннаяПодсказка" id="120"/>
+									<ChildItems>
+										<InputField name="КаталогАрхиваДляВосстановления" id="121">
+											<DataPath>КаталогАрхива</DataPath>
+											<TitleLocation>Top</TitleLocation>
+											<ToolTipRepresentation>ShowTop</ToolTipRepresentation>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<MaxWidth>70</MaxWidth>
+											<ChoiceButton>true</ChoiceButton>
+											<ChoiceButtonRepresentation>ShowInInputField</ChoiceButtonRepresentation>
+											<SpinButton>false</SpinButton>
+											<OpenButton>true</OpenButton>
+											<CreateButton>false</CreateButton>
+											<TextEdit>false</TextEdit>
+											<ContextMenu name="КаталогАрхиваДляВосстановленияКонтекстноеМеню" id="122"/>
+											<ExtendedTooltip name="КаталогАрхиваДляВосстановленияРасширеннаяПодсказка" id="123"/>
+											<Events>
+												<Event name="StartChoice">КаталогАрхиваДляВосстановленияНачалоВыбора</Event>
+												<Event name="Opening">КаталогАрхиваДляВосстановленияОткрытие</Event>
+											</Events>
+										</InputField>
+										<Button name="ОбновитьИсторию" id="213">
+											<Type>UsualButton</Type>
+											<CommandName>Form.Command.ОбновитьИсторию</CommandName>
+											<ExtendedTooltip name="ОбновитьИсториюРасширеннаяПодсказка" id="214"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаКнопкиПодвалаВосстановления" id="124">
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаКнопкиПодвалаВосстановленияРасширеннаяПодсказка" id="125"/>
+									<ChildItems>
+										<Button name="Восстановить" id="177">
+											<Type>UsualButton</Type>
+											<CommandName>Form.Command.Восстановить</CommandName>
+											<ExtendedTooltip name="ВосстановитьРасширеннаяПодсказка" id="178"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаЛог" id="220">
+					<Visible>false</Visible>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Лог</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа лог</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаЛогРасширеннаяПодсказка" id="221"/>
+					<ChildItems>
+						<Table name="ЛогВыполнения" id="222">
+							<Representation>List</Representation>
+							<CommandBarLocation>None</CommandBarLocation>
+							<ChangeRowSet>false</ChangeRowSet>
+							<ChangeRowOrder>false</ChangeRowOrder>
+							<Header>false</Header>
+							<HorizontalLines>false</HorizontalLines>
+							<VerticalLines>false</VerticalLines>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>ЛогВыполнения</DataPath>
+							<RowPictureDataPath>ЛогВыполнения.Picture</RowPictureDataPath>
+							<ContextMenu name="ЛогВыполненияКонтекстноеМеню" id="223"/>
+							<AutoCommandBar name="ЛогВыполненияКоманднаяПанель" id="224"/>
+							<ExtendedTooltip name="ЛогВыполненияРасширеннаяПодсказка" id="225"/>
+							<SearchStringAddition name="ЛогВыполненияСтрокаПоиска" id="226">
+								<AdditionSource>
+									<Item>ЛогВыполнения</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ЛогВыполненияСтрокаПоискаКонтекстноеМеню" id="227"/>
+								<ExtendedTooltip name="ЛогВыполненияСтрокаПоискаРасширеннаяПодсказка" id="228"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ЛогВыполненияСостояниеПросмотра" id="229">
+								<AdditionSource>
+									<Item>ЛогВыполнения</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ЛогВыполненияСостояниеПросмотраКонтекстноеМеню" id="230"/>
+								<ExtendedTooltip name="ЛогВыполненияСостояниеПросмотраРасширеннаяПодсказка" id="231"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ЛогВыполненияУправлениеПоиском" id="232">
+								<AdditionSource>
+									<Item>ЛогВыполнения</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ЛогВыполненияУправлениеПоискомКонтекстноеМеню" id="233"/>
+								<ExtendedTooltip name="ЛогВыполненияУправлениеПоискомРасширеннаяПодсказка" id="234"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<InputField name="ЛогВыполненияЗначение" id="235">
+									<DataPath>ЛогВыполнения.Value</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ЛогВыполненияЗначениеКонтекстноеМеню" id="236"/>
+									<ExtendedTooltip name="ЛогВыполненияЗначениеРасширеннаяПодсказка" id="237"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:ExternalDataProcessorObject.СозданиеАрхиваДокументооборота</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ОкончаниеПериода" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Окончание периода</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ОграничитьПериод" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ограничить период обработки объектов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>ОграничитьПериод</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="КаталогАрхива" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Каталог архива</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>КаталогАрхива</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ФильтрКО" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Фильтр КО</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<UseAlways>
+				<Field>ФильтрКО.Picture</Field>
+				<Field>ФильтрКО.ValueType</Field>
+			</UseAlways>
+			<Settings xsi:type="v8:TypeDescription"/>
+		</Attribute>
+		<Attribute name="ФильтрВО" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Фильтр ВО</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<UseAlways>
+				<Field>ФильтрВО.Picture</Field>
+				<Field>ФильтрВО.ValueType</Field>
+			</UseAlways>
+			<Settings xsi:type="v8:TypeDescription"/>
+		</Attribute>
+		<Attribute name="ОграничитьОрганизации" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ограничить список организаций:</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>ОграничитьОрганизации</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ФильтрОрг" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>организаций</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>ФильтрОрг.Picture</Field>
+			</UseAlways>
+			<Settings xsi:type="v8:TypeDescription"/>
+		</Attribute>
+		<Attribute name="ПредставлениеФильтраОрг" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Представление фильтра орг</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДоступенБанкРоссии" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Доступен банк россии</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ОграничитьПроизводительность" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ограничить производительность (обработка выполняется дольше)</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="НачалоПериода" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>с</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИсторияАрхивации" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>История архивации</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<UseAlways>
+				<Field>ИсторияАрхивации.Check</Field>
+				<Field>ИсторияАрхивации.Picture</Field>
+			</UseAlways>
+		</Attribute>
+		<Attribute name="ИсторияФильтрОрг" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>История фильтр орг</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<UseAlways>
+				<Field>ИсторияФильтрОрг.Picture</Field>
+				<Field>ИсторияФильтрОрг.ValueType</Field>
+			</UseAlways>
+		</Attribute>
+		<Attribute name="ИсторияФильтрВО" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>История фильтр ВО</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<UseAlways>
+				<Field>ИсторияФильтрВО.Picture</Field>
+			</UseAlways>
+		</Attribute>
+		<Attribute name="ИсторияФильтрКО" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>История фильтр КО</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<UseAlways>
+				<Field>ИсторияФильтрКО.Picture</Field>
+			</UseAlways>
+		</Attribute>
+		<Attribute name="ИсторияПериодНачало" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>с</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИсторияПериодОкончание" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>по</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТолькоВыгрузка" id="20">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Не удалять файлы из базы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ИсторияСокращенийПредметов" id="21">
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<UseAlways>
+				<Field>ИсторияСокращенийПредметов.Check</Field>
+				<Field>ИсторияСокращенийПредметов.Picture</Field>
+			</UseAlways>
+		</Attribute>
+		<Attribute name="ЛогВыполнения" id="22">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Лог выполнения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<UseAlways>
+				<Field>ЛогВыполнения.Check</Field>
+				<Field>ЛогВыполнения.Picture</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="АрхивироватьВсе" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Архивировать</v8:content>
+				</v8:item>
+			</Title>
+			<Action>АрхивироватьВсе</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="АнализироватьСодержимое" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Предварительно проанализировать содержимое</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Анализировать содержимое</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>АнализироватьСодержимое</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОстановитьВыполнение" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отменить выполнение</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Остановить выполнение</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОстановитьВыполнение</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="СделатьБэкап" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сделать резервную копию ИБ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сделать бэкап</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СделатьБэкап</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="Восстановить" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Восстановить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Восстановить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Восстановить</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОбновитьИсторию" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить историю</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить историю</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Refresh</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОбновитьИсторию</Action>
+			<Representation>Picture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

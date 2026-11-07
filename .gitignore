@@ -1,0 +1,13 @@
+# Локальные информационные базы 1С (гигантские, не для git)
+_build_base/
+_build_base_bgu/
+*.cfl
+*.dt
+*.cf
+*.epf.lock
+
+# Служебное
+*.log
+__pycache__/
+*.pyc
+.DS_Store
