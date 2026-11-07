@@ -4,7 +4,7 @@ set -euo pipefail
 echo 'Запуск отключён: тест изменяет данные всей базы. Требуется изолированный стенд и переработка фикстуры.' >&2
 exit 1
 V8=/opt/1cv8/x86_64/8.3.27.2214/1cv8
-BASE=${BASE:-/srv/projects/ProjectDeleteFilesFromZKGU_BGU/_build_base}
+BASE=${BASE:-/srv/1c-bases/zkgu-3.1}
 SRC=${SRC:-/tmp/opencode/epf/smoke_src/СозданиеАрхиваДокументооборота.xml}
 OUT=${OUT:-/tmp/opencode/epf/build/smoke.epf}
 RESULT=/tmp/opencode/epf/build/smoke-result.txt
