@@ -147,3 +147,8 @@ Pre-flight: no blocking conflicts.
 - **Регрессия.** Добавлен тест `test_date_cache_lookup_uses_poluchit_not_naiti` (нет `Кеш.Найти`, есть `Кеш.Получить` и маркер `Дата(1, 1, 1)`). `python3 -m unittest discover -s tests` → 49 тестов OK. `epf-validate` — OK.
 - **Сборка.** Финальный EPF пересобран (02:45) из чистых исходников, обратная выгрузка `/tmp/opencode/epf-fix` — **ROUND-TRIP EQUAL**.
 - Документация: `README.md` (ловушка `Соответствие` без `Найти`; рантайм-проверка периода), `docs/design/upravlenie-arhivom-faylov.md` (поиск в кеше через `Получить`, маркер), `tests/acceptance-matrix.md` (строка 47).
+
+## Приёмка
+
+- 07.11.2026 пользователь провёл полную проверку обработки на копии базы — замечаний нет. Строка 45 `tests/acceptance-matrix.md` переведена в «выполнено», раздел 8 чек-листа закрыт. Изменяющие операции (архивирование, очистка с отметкой «архивный», восстановление) подтверждены на копии; базы `bgu`/`hlev` не затрагивались.
+- Проект опубликован: https://github.com/iBoundless/ProjectDeleteFilesFromZKGU_BGU (публичный, `main`, коммит `6a34077`). Доступ к GitHub — аккаунтный (`gh`, пользователь `iBoundless`, права `repo`).
